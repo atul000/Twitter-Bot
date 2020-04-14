@@ -11,7 +11,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(key, secret)
 api = tweepy.API(auth)
 
-hashtag = ("datascience", "ai")
+hashtag = ("#COVID")
 tweetNumber = 8
 
 tweets = tweepy.Cursor(api.search, hashtag).items(tweetNumber)
